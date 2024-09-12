@@ -5,8 +5,9 @@
         "songs_of_origins:fall_invulnerable",
         "songs_of_origins:defense_boost_10",
         "songs_of_origins:lava_speed_boost",
-        "songs_of_origins:water_wither"
+        "songs_of_origins:water_wither",
+        "songs_of_origins:too_cold"
     ],
     "icon": "minecraft:magma_block",
-    "impact": 2
+    "impact": 3
 }

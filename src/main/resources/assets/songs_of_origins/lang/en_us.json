@@ -3,6 +3,8 @@
   "origin.songs_of_origins.ardoni.name": "Ardoni",
   "origin.songs_of_origins.felina.description": "",
   "origin.songs_of_origins.felina.name": "Felina",
+  "origin.songs_of_origins.glacian.description": "",
+  "origin.songs_of_origins.glacian.name": "Glacian",
   "origin.songs_of_origins.magnorite.description": "",
   "origin.songs_of_origins.magnorite.name": "Magnorite",
   "origin.songs_of_origins.netharan.description": "",
@@ -23,6 +25,8 @@
   "power.songs_of_origins.fall_invulnerable.name": "Fall Invulnerable",
   "power.songs_of_origins.fire_invulnerable.description": "Invulnerable to fire damage. (Not lava!)",
   "power.songs_of_origins.fire_invulnerable.name": "Fire Invulnerable",
+  "power.songs_of_origins.freeze_invulnerable.description": "Invulnerable to freezing damage.",
+  "power.songs_of_origins.freeze_invulnerable.name": "Freeze Invulnerable",
   "power.songs_of_origins.health_boost_10.description": "+10 Health",
   "power.songs_of_origins.health_boost_10.name": "Health Boost",
   "power.songs_of_origins.lava_invulnerable.description": "Invulnerable to lava damage.",
@@ -33,6 +37,10 @@
   "power.songs_of_origins.potion_invulnerable.name": "Potion Invulnerable",
   "power.songs_of_origins.prevent_redstone.description": "You cannot use redstone things.",
   "power.songs_of_origins.prevent_redstone.name": "Prevent Redstone",
+  "power.songs_of_origins.too_cold.description": "You cannot stay in cold biomes.",
+  "power.songs_of_origins.too_cold.name": "Too Cold",
+  "power.songs_of_origins.too_hot.description": "You cannot stay in hot biomes.",
+  "power.songs_of_origins.too_hot.name": "Too Hot",
   "power.songs_of_origins.water_wither.description": "Withering when you touch water.",
   "power.songs_of_origins.water_wither.name": "Poison Water"
 }
