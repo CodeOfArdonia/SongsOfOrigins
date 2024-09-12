@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "songs_of_origins",
+  "version": "${version}",
+  "name": "Song Of Origins",
+  "description": "Integration between Origins and Songs of War",
+  "authors": [
+    "IAFEnvoy"
+  ],
+  "contact": {
+    "repo": "https://github.com/ArkTechMC/SongOfOrigins"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/song_of_origins/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.iafenvoy.soo.client.SongOfOriginsClient"
+    ],
+    "main": [
+      "com.iafenvoy.soo.SongOfOrigins"
+    ]
+  },
+  "mixins": [
+    "soo.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "powers": [
+        "songs_of_origins:health_boost_10",
+        "songs_of_origins:potion_invulnerable",
+        "songs_of_origins:prevent_redstone"
+    ],
+    "icon": "sow:aggressium_prime_song",
+    "impact": 3
+}
