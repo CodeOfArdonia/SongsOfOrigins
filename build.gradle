@@ -30,7 +30,7 @@ repositories {
         }
     }
     maven {
-        url "https://maven.jamieswhiteshirt.com/libs-release"
+        url = "https://maven.jamieswhiteshirt.com/libs-release"
         content {
             includeGroup "com.jamieswhiteshirt"
         }
@@ -98,7 +98,7 @@ java {
 
 jar {
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
+        rename { "${it}_${project.archivesBaseName}" }
     }
 }
 
