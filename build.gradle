@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.6-SNAPSHOT'
+    id 'fabric-loom' version '1.7-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -44,6 +44,9 @@ repositories {
     maven {
         url "https://maven.terraformersmc.com/"
     }
+    flatDir {
+        dir "./flatDir"
+    }
 }
 
 dependencies {
@@ -58,6 +61,8 @@ dependencies {
     modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
 
     modImplementation "maven.modrinth:songs-of-war:p7bp0J3c"
+
+    modCompileOnly "com.iafenvoy.sop:sop:0.1"
 }
 
 processResources {

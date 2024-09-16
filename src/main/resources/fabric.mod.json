@@ -13,14 +13,7 @@
   "license": "All Rights Reserved",
   "icon": "logo.jpg",
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "com.iafenvoy.soo.SongOfOrigins"
-    ],
-    "client": [
-      "com.iafenvoy.soo.client.SongOfOriginsClient"
-    ]
-  },
+  "entrypoints": {},
   "mixins": [
     "soo.mixins.json"
   ],

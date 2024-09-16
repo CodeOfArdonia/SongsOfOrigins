@@ -4,6 +4,6 @@
         "songs_of_origins:potion_invulnerable",
         "songs_of_origins:prevent_redstone"
     ],
-    "icon": "sow:aggressium_prime_song",
+    "icon": "minecraft:jukebox",
     "impact": 3
 }
