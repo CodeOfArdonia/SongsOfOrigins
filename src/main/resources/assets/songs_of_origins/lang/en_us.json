@@ -37,6 +37,8 @@
   "power.songs_of_origins.potion_invulnerable.name": "Potion Invulnerable",
   "power.songs_of_origins.prevent_redstone.description": "You cannot use redstone things.",
   "power.songs_of_origins.prevent_redstone.name": "Prevent Redstone",
+  "power.songs_of_origins.songs.description": "You can use Song Abilities. (Require Songs of Power Mod)",
+  "power.songs_of_origins.songs.name": "Songs Power",
   "power.songs_of_origins.too_cold.description": "You cannot stay in cold biomes.",
   "power.songs_of_origins.too_cold.name": "Too Cold",
   "power.songs_of_origins.too_hot.description": "You cannot stay in hot biomes.",
