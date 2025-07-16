@@ -16,53 +16,35 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
-    maven {
-        url = "https://api.modrinth.com/maven"
-    }
-    maven {
-        name = "Ladysnake Libs"
-        url = 'https://maven.ladysnake.org/releases'
-    }
-    maven {
-        url = 'https://maven.cafeteria.dev'
-        content {
-            includeGroup 'net.adriantodt.fabricmc'
-        }
-    }
-    maven {
-        url = "https://maven.jamieswhiteshirt.com/libs-release"
-        content {
-            includeGroup "com.jamieswhiteshirt"
-        }
-    }
-    maven {
-        url "https://jitpack.io"
-    }
-    maven {
-        url "https://maven.shedaniel.me/"
-    }
-    maven {
-        url "https://maven.terraformersmc.com/"
-    }
-    flatDir {
-        dir "./flatDir"
-    }
+    maven { url "https://api.modrinth.com/maven" }
+    maven { url 'https://maven.ladysnake.org/releases' }
+    maven { url 'https://maven.cafeteria.dev' }
+    maven { url "https://maven.jamieswhiteshirt.com/libs-release" }
+    maven { url "https://jitpack.io" }
+    maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://maven.terraformersmc.com/" }
+    maven { url "https://maven.quiltmc.org/repository/release/" }
 }
 
 dependencies {
-    // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
+    modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
+    modApi "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}"
+    modApi "dev.onyxstudios.cardinal-components-api:cardinal-components-chunk:${project.cca_version}"
+    modImplementation "dev.emi:trinkets:${trinkets_version}"
+    modImplementation "maven.modrinth:neptune:weLtxaHp"
+    modImplementation "maven.modrinth:jupiter:IEkoxH6Y"
+    modImplementation "com.github.Chocohead:Fabric-ASM:v2.3"
+    modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
+    modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
+    modImplementation "maven.modrinth:songs-of-war:gIhhy66g"
+    modImplementation "com.github.apace100:calio:v1.11.0"
+    modImplementation "com.github.apace100:apoli:v2.9.0"
     modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
-
-    modImplementation "maven.modrinth:songs-of-war:p7bp0J3c"
-
-    modCompileOnly "com.iafenvoy.sop:sop:0.1"
 }
 
 processResources {

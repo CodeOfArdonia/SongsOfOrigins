@@ -1,10 +1,10 @@
 {
   "replace": false,
   "origins": [
-    "songs_of_origins:ardoni",
-    "songs_of_origins:felina",
-    "songs_of_origins:magnorite",
-    "songs_of_origins:netharan",
-    "songs_of_origins:glacian"
+    "sow:ardoni",
+    "sow:felina",
+    "sow:magnorite",
+    "sow:netharan",
+    "sow:glacian"
   ]
 }

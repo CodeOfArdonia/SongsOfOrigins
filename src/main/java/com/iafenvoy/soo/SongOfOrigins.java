@@ -1,5 +1,11 @@
 package com.iafenvoy.soo;
 
-public class SongOfOrigins {
-    public static final String MOD_ID = "songs_of_origins";
+import com.iafenvoy.soo.registry.SooPowerFactories;
+import net.fabricmc.api.ModInitializer;
+
+public class SongOfOrigins implements ModInitializer {
+    @Override
+    public void onInitialize() {
+        SooPowerFactories.init();
+    }
 }

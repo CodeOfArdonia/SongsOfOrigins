@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "origins:climbing",
+    "sow:agile",
+    "origins:fall_immunity",
+    "sow:afraid_water",
+    "sow:felina_no_armor",
+    "sow:carnivore"
+  ],
+  "icon": "minecraft:cod",
+  "impact": 2,
+  "order": 2
+}
