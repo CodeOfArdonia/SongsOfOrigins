@@ -1,8 +1,8 @@
 {
   "powers": [
+    "origins:fall_immunity",
     "sow:fire_invulnerable",
     "sow:lava_invulnerable",
-    "origins:fall_immunity",
     "sow:defense_boost_10",
     "sow:lava_speed_boost",
     "sow:water_wither",
