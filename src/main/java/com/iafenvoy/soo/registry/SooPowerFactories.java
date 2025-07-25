@@ -8,7 +8,7 @@ import io.github.apace100.apoli.registry.ApoliRegistries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class SooPowerFactories {
+public final class SooPowerFactories {
     public static void init() {
         register(Power.createSimpleFactory(SongPowerPower::new, Identifier.of(SongsOfWar.MOD_ID, "song_power")));
     }

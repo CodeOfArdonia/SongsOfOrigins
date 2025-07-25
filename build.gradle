@@ -17,13 +17,13 @@ repositories {
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
     maven { url "https://api.modrinth.com/maven" }
-    maven { url 'https://maven.ladysnake.org/releases' }
     maven { url 'https://maven.cafeteria.dev' }
     maven { url "https://maven.jamieswhiteshirt.com/libs-release" }
     maven { url "https://jitpack.io" }
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://maven.terraformersmc.com/" }
     maven { url "https://maven.quiltmc.org/repository/release/" }
+    maven { url 'https://maven.ladysnake.org/releases' }
 }
 
 dependencies {

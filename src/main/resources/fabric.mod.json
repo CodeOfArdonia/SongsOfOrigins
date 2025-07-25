@@ -15,7 +15,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.iafenvoy.soo.SongOfOrigins"
+      "com.iafenvoy.soo.SongsOfOrigins"
+    ],
+    "client": [
+      "com.iafenvoy.soo.SongsOfOriginsClient"
     ]
   },
   "mixins": [
