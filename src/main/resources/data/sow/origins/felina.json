@@ -5,7 +5,8 @@
     "origins:carnivore",
     "sow:agile",
     "sow:afraid_water",
-    "sow:felina_no_armor"
+    "sow:felina_no_armor",
+    "sow:cat_ear"
   ],
   "icon": "minecraft:cod",
   "impact": 2,

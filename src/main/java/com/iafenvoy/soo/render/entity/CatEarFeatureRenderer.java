@@ -1,5 +1,6 @@
 package com.iafenvoy.soo.render.entity;
 
+import com.iafenvoy.soo.data.CatEarData;
 import com.iafenvoy.soo.render.model.CatEarModel;
 import com.iafenvoy.sow.SongsOfWar;
 import net.minecraft.client.render.RenderLayer;
@@ -25,11 +26,14 @@ public class CatEarFeatureRenderer<T extends PlayerEntity, M extends PlayerEntit
 
     @Override
     public void render(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, T entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {
+        if (!CatEarData.byPlayer(entity).isEnabled()) return;
+        matrices.push();
         translateToFace(matrices, this.getContextModel(), entity, headYaw, headPitch);
         matrices.translate(0, -1.25, 0.1);
-        matrices.scale(0.75f,0.75f,0.75f);
+        matrices.scale(0.75f, 0.75f, 0.75f);
         this.model.render(matrices, vertexConsumers.getBuffer(RenderLayer.getEntityCutout(INNER)), light, LivingEntityRenderer.getOverlay(entity, 0), 1, 1, 1, 1);
         this.model.render(matrices, vertexConsumers.getBuffer(RenderLayer.getEntityCutout(OUTER)), light, LivingEntityRenderer.getOverlay(entity, 0), 1, 1, 1, 1);
+        matrices.pop();
     }
 
     public static <T extends PlayerEntity, M extends PlayerEntityModel<T>> void translateToFace(MatrixStack matrices, M model, T player, float headYaw, float headPitch) {

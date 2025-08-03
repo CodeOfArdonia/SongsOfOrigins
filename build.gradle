@@ -35,6 +35,7 @@ dependencies {
     modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
     modApi "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}"
     modApi "dev.onyxstudios.cardinal-components-api:cardinal-components-chunk:${project.cca_version}"
+    modApi "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}"
     modImplementation "dev.emi:trinkets:${trinkets_version}"
     modImplementation "maven.modrinth:neptune:weLtxaHp"
     modImplementation "maven.modrinth:jupiter:IEkoxH6Y"

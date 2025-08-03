@@ -1,5 +1,6 @@
 package com.iafenvoy.soo.registry;
 
+import com.iafenvoy.soo.power.CatEarPower;
 import com.iafenvoy.soo.power.SongPowerPower;
 import com.iafenvoy.sow.SongsOfWar;
 import io.github.apace100.apoli.power.Power;
@@ -11,6 +12,7 @@ import net.minecraft.util.Identifier;
 public final class SooPowerFactories {
     public static void init() {
         register(Power.createSimpleFactory(SongPowerPower::new, Identifier.of(SongsOfWar.MOD_ID, "song_power")));
+        register(Power.createSimpleFactory(CatEarPower::new, Identifier.of(SongsOfWar.MOD_ID, "cat_ear")));
     }
 
     private static void register(PowerFactory<?> powerFactory) {

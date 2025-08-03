@@ -19,6 +19,14 @@
     ],
     "client": [
       "com.iafenvoy.soo.SongsOfOriginsClient"
+    ],
+    "cardinal-components": [
+      "com.iafenvoy.soo.data.ModComponentEntry"
+    ]
+  },
+  "custom": {
+    "cardinal-components": [
+      "sow:cosmetic"
     ]
   },
   "mixins": [
