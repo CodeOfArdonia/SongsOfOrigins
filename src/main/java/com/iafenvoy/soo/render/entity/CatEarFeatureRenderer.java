@@ -2,6 +2,7 @@ package com.iafenvoy.soo.render.entity;
 
 import com.iafenvoy.soo.data.CatEarData;
 import com.iafenvoy.soo.render.model.CatEarModel;
+import com.iafenvoy.soo.util.Color4i;
 import com.iafenvoy.sow.SongsOfWar;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -26,13 +27,15 @@ public class CatEarFeatureRenderer<T extends PlayerEntity, M extends PlayerEntit
 
     @Override
     public void render(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, T entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {
-        if (!CatEarData.byPlayer(entity).isEnabled()) return;
+        CatEarData data = CatEarData.byPlayer(entity);
+        if (!data.isEnabled()) return;
         matrices.push();
         translateToFace(matrices, this.getContextModel(), entity, headYaw, headPitch);
         matrices.translate(0, -1.25, 0.1);
         matrices.scale(0.75f, 0.75f, 0.75f);
-        this.model.render(matrices, vertexConsumers.getBuffer(RenderLayer.getEntityCutout(INNER)), light, LivingEntityRenderer.getOverlay(entity, 0), 1, 1, 1, 1);
-        this.model.render(matrices, vertexConsumers.getBuffer(RenderLayer.getEntityCutout(OUTER)), light, LivingEntityRenderer.getOverlay(entity, 0), 1, 1, 1, 1);
+        Color4i inner = new Color4i(data.getInnerColor()), outer = new Color4i(data.getOuterColor());
+        this.model.render(matrices, vertexConsumers.getBuffer(RenderLayer.getEntityCutout(INNER)), light, LivingEntityRenderer.getOverlay(entity, 0), inner.getR(), inner.getG(), inner.getB(), 1);
+        this.model.render(matrices, vertexConsumers.getBuffer(RenderLayer.getEntityCutout(OUTER)), light, LivingEntityRenderer.getOverlay(entity, 0), outer.getR(), outer.getG(), outer.getB(), 1);
         matrices.pop();
     }
 

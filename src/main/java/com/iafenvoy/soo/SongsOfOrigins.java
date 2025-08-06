@@ -7,5 +7,6 @@ public class SongsOfOrigins implements ModInitializer {
     @Override
     public void onInitialize() {
         SooPowerFactories.init();
+        SooCommand.register();
     }
 }

@@ -5,7 +5,7 @@ import net.minecraft.nbt.NbtCompound;
 
 public class CatEarData {
     private boolean enabled;
-    private int innerColor, outerColor;
+    private int innerColor = -1, outerColor = -1;
     private boolean dirty;
 
     public void readNbt(NbtCompound nbt) {
